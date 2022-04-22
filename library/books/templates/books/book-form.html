@@ -1,0 +1,22 @@
+{% extends 'homepage/layout.html' %}
+{%load crispy_forms_tags %} 
+
+{% block content %}
+
+
+
+<form method = "POST" action="" enctype="multipart/form-data" class = "container w-50 bg-dark text-light p-3 border-3 border-info rounded"> 
+    {% csrf_token %}
+
+    {{ form|crispy  }}
+    
+    <input value = "Submit" type = "submit" class= "btn btn-success mt-4"/>
+
+</form>
+
+{% endblock content %}
+
+
+
+
+

@@ -1,0 +1,16 @@
+{% extends 'homepage/layout.html' %}
+
+{% load static %}
+{% block content %}
+    <section>
+        <header class="d-flex align-items-center">
+            <div class="container px-4 px-lg-5 text-center">
+                <h1 class="mb-1 page-title">Welcome To Our Book Site</h1>
+                <h3 class="mb-5 text-lg"><em>You Can View Books And Authors</em></h3>
+                <a class="btn btn-primary btn-xl p-3" href="{% url 'all_books' %}">Go To Books</a>
+            </div>
+        </header>
+        
+        
+    </section>
+{% endblock content %}

@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/*!
+* Start Bootstrap - Stylish Portfolio v6.0.5 (https://startbootstrap.com/theme/stylish-portfolio)
+* Copyright 2013-2022 Start Bootstrap
+* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-stylish-portfolio/blob/master/LICENSE)
+*/
+/*!
+ * Bootstrap v5.1.3 (https://getbootstrap.com/)
+ * Copyright 2011-2021 The Bootstrap Authors
+ * Copyright 2011-2021 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+
+
+
+
+body {
+  margin: 0;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  background-color: #F2F2F2;
+}
+
+.bookName {
+  color: blue;
+}
+.bookImage{
+  width: 400px;
+  height: 400px;
+}
+footer.main-footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background-color: #383838;
+}
+
+.page-title{
+  font-size: 5rem;
+}
+nav.main-nav {
+  background-color: #383838;
+}
+.card{
+  margin: auto;
+}

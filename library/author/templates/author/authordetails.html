@@ -1,0 +1,39 @@
+{% extends 'homepage/layout.html' %}
+{% block content %}
+<h2>Author Name: {{ Author.name }}     </h2>
+
+<table class="table container text-center border border-success">
+
+    <thead class="thead-dark bg-dark text-light">
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">Book Name</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+     {% for book in Book_author %}
+
+      <tr>
+        <th scope="row">{{ book.id }}</th>
+        <td> <h3>{{ book.name }}</h3></td>
+        <td>
+            <a  href="{% url 'book_page' book.id %}" class="btn btn-primary w-25">Go to Book: {{ book.name }}</a>
+        </td>
+      </tr>
+    {% endfor %}
+
+
+    </tbody>
+
+  </table>
+  <a href="{% url  'all_books' %}" class ="btn btn-success text-center m-5">Go Home</a>
+
+  
+
+
+
+
+{% endblock content %}
+
+

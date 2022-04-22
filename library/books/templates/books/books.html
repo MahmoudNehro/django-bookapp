@@ -1,0 +1,34 @@
+{% extends 'homepage/layout.html' %}
+{% block content %}
+<table class="table container text-center border border-success">
+    <thead class="thead-dark bg-dark text-light">
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">Book Name</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for book in Books %}
+
+      <tr>
+        <th scope="row">{{ book.id }}</th>
+        <td><a class= "btn btn-primary w-25" href="{% url 'book_page' book.id %}">{{ book.name }}</a></td>
+        <td><a class= "btn btn-info" href="{% url 'update_book' book.id %}">Edit</a>
+          <a class= "btn btn-danger" href="{% url 'delete_book' book.id %}">Delete</a>
+
+        </td>
+      </tr>
+    {% endfor %}
+
+    
+    </tbody>
+  </table>
+  
+
+
+
+
+{% endblock content %}
+
+

@@ -1,0 +1,26 @@
+{% extends 'homepage/layout.html' %}
+{% load static %}
+
+
+
+{% block content %}
+<div class = "container text-center bookdetails">
+   
+
+   <div class="card book-details" style="width: 18rem;">
+      <img class="card-img-top" src="{{  Book.image.url }}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Book Name: {{ Book.name }}</h5>
+        <p class="card-text">Book Price: {{ Book.price }}$</p>
+        <p class="card-text">Appropriate for age: {{ Book.appropriate }}</p>
+        <a href="{% url 'author_page' Book.author.id %}" class="btn btn-primary">Author: {{ Book.author }}</a>
+      </div>
+      <a href="{% url  'all_books' %}" class ="btn btn-success">Go Home</a>
+
+    </div>
+
+</div> 
+
+
+
+{% endblock content %}

@@ -1,0 +1,18 @@
+{% extends 'homepage/layout.html' %}
+{% block content %}
+
+
+
+<form method = "POST" action="" class="text-center"> 
+    {% csrf_token %}
+    <h1 class="text-danger m-4"> Are you sure? </h1>
+    <a href="{% url 'all_books' %}" class="btn btn-info p-2"> Go Back</a>
+    <input value = "Delete" type="submit" class="btn btn-danger p-2"/>
+</form>
+
+{% endblock content %}
+
+
+
+
+
